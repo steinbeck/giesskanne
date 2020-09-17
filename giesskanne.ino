@@ -166,6 +166,7 @@ void loop() {
     if (minusbuttonState == 1  && irrigationTime > 1){
       irrigationTime --; 
       irrigationTimeChanged = true;  
+      delay(200);
       return;
     }
     if (triggerbuttonState == 1) 
