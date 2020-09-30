@@ -163,7 +163,6 @@ void loop() {
   void updateTimeLeft()
   {
     if (paused) return;
-    Serial.print(".");
     u8x8.setCursor(0, 4);
     u8x8.print(((currentmillis - lastmillis))/60000);
     u8x8.print("/");
